@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JS - Timing</title>
+	<title>Watch Me Earn</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="shortcut icon" href="img/favicon.ico">
 	<script type="text/javascript" src='main.js'></script>
+	<script type="text/javascript" src='mobile.js'></script>
 </head>
 <body>
 	<header>
@@ -30,37 +31,10 @@
 	<div class='footer-bar'>
 		<p class='footer-bar-text'>
 		<p>visit my website <a href='http://everythingrob.co.uk' target='_blank'>everythingrob.co.uk</a></p>
-		<p>view the code on <a href='http://github.com' target='_blank'>GitHub</a></p>
+		<p>view the code on <a href='https://github.com/everythingrob/watchmeearn' target='_blank'>GitHub</a></p>
 		<p>&copy; 2014 Rob Calcroft</p>
 	</p>
 
 	</div>
-
-	<script type="text/javascript">
-function RedirectSmartphone(url){
-    if (url && url.length > 0 && IsSmartphone())
-    window.location = url;
-}
-function IsSmartphone(){
-    if (DetectUagent("android")) return true;
-    else if (DetectUagent("blackberry")) return true;
-    else if (DetectUagent("iphone")) return true;
-    else if (DetectUagent("opera")) return true;
-    else if (DetectUagent("palm")) return true;
-    else if (DetectUagent("windows")) return true;
-    else if (DetectUagent("generic")) return true;
-    else if (DetectUagent("ipad")) return true;
-    else if (DetectUagent("ipod")) return true;
-    return false;
-}
-function DetectUagent(name){
-    var uagent = navigator.userAgent.toLowerCase();
-    if (uagent.search(name) > -1)
-    return true;
-    else
-    return false;
-}
-RedirectSmartphone("http://everythingrob.co.uk/watchmeearn/mobile.html");
-</script>
 </body>
 </html>

@@ -24,12 +24,6 @@ a {
 	color: inherit;
 }
 
-#wank {
-	color: red;
-	opacity: 1;
-	-webkit-transition: opacity .5s ease;
-}
-
 header {
 	font-size: 80px;
 	font-weight: 700;
