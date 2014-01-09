@@ -1,5 +1,6 @@
 var timer;
 		function startTimer() {
+			document.getElementById('timer_info').style.display = 'block';
 			document.getElementById('timer_started').innerHTML = "You started work at " + '<b>' + getTime_() + '</b>';
 			document.getElementById('timer_finished').innerHTML = '';
 			var timerDisp = document.getElementById('timer');
@@ -20,6 +21,7 @@ var timer;
 			if(document.getElementById('timer_started').innerHTML == '') {
 				return false;
 			}
+			document.getElementById('timer_info').style.display = 'none';
 			window.clearInterval(timer);
 			var a = document.getElementById('timer');
 			var amount = a.innerHTML;
