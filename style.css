@@ -49,7 +49,7 @@ header {
 	
 }
 
-#overlay {
+#overlay, #overlay1 {
 	z-index: 9999;
 	overflow: hidden;
 	background-color: rgba(0,0,0,.85);
@@ -63,7 +63,7 @@ header {
  	transition: opacity .5s ease;
 }
 
-#overlay:before {
+#overlay:before , #overlay1:before {
     content: '';
     display: inline-block;
     height: 100%;
@@ -71,7 +71,7 @@ header {
     margin-right: -0.25em;
 }
 
-#overlay span {
+#overlay span, #overlay1 span {
 	color: white;
 	text-align: center;
 	vertical-align: middle;

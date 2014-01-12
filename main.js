@@ -18,12 +18,17 @@ var timer;
 		}
 
 		function stopTimer() {
+			var a = document.getElementById('timer');
 			if(document.getElementById('timer_started').innerHTML == '') {
+				return false;
+			}
+			if(a.innerHTML == '') {
+				document.getElementById('overlay1').style.height = 'auto'; 
+				document.getElementById('overlay1').style.opacity = "1";
 				return false;
 			}
 			document.getElementById('timer_info').style.display = 'none';
 			window.clearInterval(timer);
-			var a = document.getElementById('timer');
 			var amount = a.innerHTML;
 			a.innerHTML = '';
 
@@ -75,10 +80,10 @@ var timer;
 			}
 		}
 
-		function removeOverlay () {
-			document.getElementById('overlay').style.opacity = '0';
+		function removeOverlay (ov) {
+			document.getElementById(ov).style.opacity = '0';
 			setTimeout(function() {
-				document.getElementById('overlay').style.height = '0';
+				document.getElementById(ov).style.height = '0';
 			}, 500);
 		}
 
